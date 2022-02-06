@@ -1,0 +1,122 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Props/blacksmith shop(ready to use)_to build another shop, use provided props.png" type="Texture" id=1]
+[ext_resource path="res://Props/Shop/Shop.gd" type="Script" id=2]
+[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Props/forge chimney-white smoke-anim1.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 160, 52 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 8.0
+height = 32.0
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 4 )
+region = Rect2( 64, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 4 )
+region = Rect2( 128, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 4 )
+region = Rect2( 192, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 4 )
+region = Rect2( 256, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 4 )
+region = Rect2( 320, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 4 )
+region = Rect2( 384, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 4 )
+region = Rect2( 448, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 4 )
+region = Rect2( 512, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 4 )
+region = Rect2( 576, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 4 )
+region = Rect2( 640, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 4 )
+region = Rect2( 704, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 4 )
+region = Rect2( 768, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 4 )
+region = Rect2( 832, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 4 )
+region = Rect2( 896, 0, 64, 82 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 4 )
+region = Rect2( 960, 0, 64, 82 )
+
+[sub_resource type="SpriteFrames" id=19]
+animations = [ {
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ) ],
+"loop": true,
+"name": "default",
+"speed": 15.0
+} ]
+
+[node name="Shop" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -71 )
+texture = ExtResource( 1 )
+
+[node name="ShopBody" type="StaticBody2D" parent="."]
+position = Vector2( 0, -71 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShopBody"]
+position = Vector2( 0, 76 )
+shape = SubResource( 1 )
+
+[node name="RoofArea" type="Area2D" parent="."]
+position = Vector2( 0, -71 )
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RoofArea"]
+polygon = PoolVector2Array( -160, 24, -168, 24, -168, -56, -136, -80, -112, -104, -88, -128, -56, -88, -24, -64, -8, -56, 24, -56, 24, -40, 152, -40, 160, 0, 168, 24 )
+
+[node name="Door" type="Area2D" parent="."]
+position = Vector2( 0, -71 )
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2( -88, 128 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 8, -152 )
+frames = SubResource( 19 )
+frame = 11
+playing = true
