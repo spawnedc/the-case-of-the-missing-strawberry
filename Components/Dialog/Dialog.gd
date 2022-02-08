@@ -37,6 +37,8 @@ func _on_event_start():
 		DialogManager.next_event()
 	elif event_id == "dialogic_022":
 		text.text = "[END OF DIALOG]"
+	else:
+		text.text = "[UNHANDLED EVENT: " + event_id + "]"
 
 
 func _on_dialog_end():
