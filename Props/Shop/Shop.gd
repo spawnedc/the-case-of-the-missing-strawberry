@@ -21,5 +21,6 @@ func _on_Roof_body_exited(_body: Node):
 
 func _on_Door_body_entered(body: Node):
 	print("Door entered: " + body.get_name())
-	var dialog = Dialogic.start("shopConversation")
-	add_child(dialog)
+	DialogManager.start("shopConversation")
+	# var dialog = Dialogic.start("shopConversation")
+	# add_child(dialog)
