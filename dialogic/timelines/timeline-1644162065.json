@@ -1,96 +1,94 @@
 {
-	"events": [
-		{
-			"action": "join",
-			"character": "character-1644161929.json",
-			"event_id": "dialogic_002",
-			"mirror": false,
-			"portrait": "",
-			"position": {
-				"0": true,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			}
-		},
-		{
-			"character": "character-1644161929.json",
-			"event_id": "dialogic_001",
-			"portrait": "warrior-idle",
-			"text": "Hello!"
-		},
-		{
-			"action": "join",
-			"character": "character-1644161937.json",
-			"event_id": "dialogic_002",
-			"mirror": false,
-			"portrait": "",
-			"position": {
-				"0": false,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": true
-			}
-		},
-		{
-			"character": "character-1644161937.json",
-			"event_id": "dialogic_001",
-			"portrait": "Vendor-guy-animation1-bold",
-			"text": "Welcome to my shop"
-		},
-		{
-			"character": "",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": "What would you like to do?"
-		},
-		{
-			"choice": "Browse",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1644161929.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Show me what you got!\t"
-		},
-		{
-			"choice": "Leave",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1644161929.json",
-			"event_id": "dialogic_001",
-			"portrait": "(Don't change)",
-			"text": "Bye!"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"action": "leaveall",
-			"character": "[All]",
-			"event_id": "dialogic_003"
-		},
-		{
-			"event_id": "dialogic_022",
-			"transition_duration": 0
-		}
-	],
-	"metadata": {
-		"dialogic-version": "1.3",
-		"file": "timeline-1644162065.json",
-		"name": "shopConversation"
-	}
+  "events": [
+    {
+      "action": "join",
+      "character": "character-1644161929.json",
+      "event_id": "dialogic_002",
+      "mirror": false,
+      "portrait": "",
+      "position": {
+        "0": true,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false
+      }
+    },
+    {
+      "character": "character-1644161929.json",
+      "event_id": "dialogic_001",
+      "portrait": "warrior-idle",
+      "text": "Hello!"
+    },
+    {
+      "action": "join",
+      "character": "character-1644161937.json",
+      "event_id": "dialogic_002",
+      "mirror": false,
+      "portrait": "",
+      "position": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": true
+      }
+    },
+    {
+      "character": "character-1644161937.json",
+      "event_id": "dialogic_001",
+      "portrait": "Vendor-guy-animation1-bold",
+      "text": "Welcome to my shop"
+    },
+    {
+      "character": "character-1644161929.json",
+      "event_id": "dialogic_010",
+      "options": [],
+      "portrait": "",
+      "question": "What would you like to do?"
+    },
+    {
+      "choice": "Browse",
+      "condition": "",
+      "definition": "",
+      "event_id": "dialogic_011",
+      "value": ""
+    },
+    {
+      "character": "character-1644161929.json",
+      "event_id": "dialogic_001",
+      "portrait": "",
+      "text": "Show me what you got!\t"
+    },
+    {
+      "choice": "Leave",
+      "condition": "",
+      "definition": "",
+      "event_id": "dialogic_011",
+      "value": ""
+    },
+    {
+      "character": "character-1644161929.json",
+      "event_id": "dialogic_001",
+      "portrait": "(Don't change)",
+      "text": "Bye!"
+    },
+    {
+      "event_id": "dialogic_013"
+    },
+    {
+      "action": "leaveall",
+      "character": "[All]",
+      "event_id": "dialogic_003"
+    },
+    {
+      "event_id": "dialogic_022",
+      "transition_duration": 0
+    }
+  ],
+  "metadata": {
+    "dialogic-version": "1.3",
+    "file": "timeline-1644162065.json",
+    "name": "shopConversation"
+  }
 }
