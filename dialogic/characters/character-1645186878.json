@@ -1,0 +1,20 @@
+{
+	"color": "#ff570088",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1645186878.json",
+	"mirror_portraits": false,
+	"name": "Baddie",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Characters/enemy-portrait.png"
+		}
+	],
+	"scale": 100
+}

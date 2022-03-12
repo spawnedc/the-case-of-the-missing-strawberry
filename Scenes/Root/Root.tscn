@@ -9,3 +9,4 @@ script = ExtResource( 3 )
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Town" parent="." instance=ExtResource( 1 )]
+position = Vector2( 132, 42 )

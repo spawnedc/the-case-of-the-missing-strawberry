@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Props/Shop/Shop.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilesets/Town.tres" type="TileSet" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Props/Tree/Tree.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/Music/rpg_soundtrack/No Enemies Here.wav" type="AudioStream" id=5]
 [ext_resource path="res://Scenes/Town/Town.gd" type="Script" id=6]
+[ext_resource path="res://Entities/Baddie/Baddie.tscn" type="PackedScene" id=7]
 
 [node name="Town" type="Node2D"]
 script = ExtResource( 6 )
@@ -28,10 +29,13 @@ cell_size = Vector2( 32, 32 )
 format = 1
 tile_data = PoolIntArray( 524290, 3, 65536, 524291, 3, 2, 524292, 3, 2, 524293, 3, 2, 524294, 3, 2, 524295, 3, 2, 524296, 3, 2, 524297, 3, 2, 524298, 3, 3, 589826, 3, 262145, 589827, 3, 262146, 589828, 3, 262146, 589829, 3, 262146, 589830, 3, 262146, 589831, 3, 262146, 589832, 3, 196609, 589833, 3, 131075, 589834, 3, 131076, 655368, 3, 262145, 655369, 3, 196609, 655370, 3, 65539, 655371, 3, 2, 655372, 3, 65540, 720905, 3, 196608, 720906, 3, 262146, 720907, 3, 196609, 720908, 3, 65539, 720909, 3, 2, 720910, 3, 3, 720928, 3, 1, 720929, 3, 2, 720930, 3, 2, 720931, 3, 2, 720932, 3, 2, 720933, 3, 2, 720934, 3, 3, 786443, 3, 196608, 786444, 3, 262146, 786445, 3, 196609, 786446, 3, 65539, 786447, 3, 2, 786448, 3, 2, 786449, 3, 2, 786450, 3, 2, 786451, 3, 2, 786452, 3, 2, 786453, 3, 2, 786454, 3, 2, 786455, 3, 2, 786456, 3, 2, 786457, 3, 2, 786458, 3, 2, 786459, 3, 2, 786460, 3, 2, 786461, 3, 2, 786462, 3, 2, 786463, 3, 2, 786464, 3, 65537, 786465, 3, 196611, 786466, 3, 262146, 786467, 3, 262146, 786468, 3, 262146, 786469, 3, 262146, 786470, 3, 196612, 851981, 3, 262145, 851982, 3, 262146, 851983, 3, 262146, 851984, 3, 262146, 851985, 3, 262146, 851986, 3, 262146, 851987, 3, 262146, 851988, 3, 262146, 851989, 3, 262146, 851990, 3, 262146, 851991, 3, 262146, 851992, 3, 262146, 851993, 3, 262146, 851994, 3, 262146, 851995, 3, 262146, 851996, 3, 262146, 851997, 3, 262146, 851998, 3, 262146, 851999, 3, 262146, 852000, 3, 262146, 852001, 3, 262147 )
 
+[node name="Baddie" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1354, 217 )
+
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 3 )]
-position = Vector2( 1160, 416 )
+position = Vector2( 1120, 226 )
 collision_layer = 3
 collision_mask = 3
 
