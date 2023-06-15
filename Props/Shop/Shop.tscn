@@ -1,11 +1,11 @@
 [gd_scene load_steps=23 format=2]
 
-[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Props/blacksmith shop(ready to use)_to build another shop, use provided props.png" type="Texture" id=1]
+[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Props/blacksmith shop(ready to use)_to build another shop, use provided props.png" type="Texture2D" id=1]
 [ext_resource path="res://Props/Shop/Shop.gd" type="Script" id=2]
-[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Props/forge chimney-white smoke-anim1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Props/forge chimney-white smoke-anim1.png" type="Texture2D" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 160, 52 )
+size = Vector2( 160, 52 )
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 8.0
@@ -86,7 +86,7 @@ animations = [ {
 [node name="Shop" type="Node2D"]
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2( 0, -71 )
 texture = ExtResource( 1 )
 
@@ -103,7 +103,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RoofArea"]
-polygon = PoolVector2Array( -160, 24, -168, 24, -168, -56, -136, -80, -112, -104, -88, -128, -56, -88, -24, -64, -8, -56, 24, -56, 24, -40, 152, -40, 160, 0, 168, 24 )
+polygon = PackedVector2Array( -160, 24, -168, 24, -168, -56, -136, -80, -112, -104, -88, -128, -56, -88, -24, -64, -8, -56, 24, -56, 24, -40, 152, -40, 160, 0, 168, 24 )
 
 [node name="Door" type="Area2D" parent="."]
 position = Vector2( 0, -71 )
@@ -115,7 +115,7 @@ position = Vector2( -88, 128 )
 rotation = 1.5708
 shape = SubResource( 2 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2( 8, -152 )
 frames = SubResource( 19 )
 frame = 2

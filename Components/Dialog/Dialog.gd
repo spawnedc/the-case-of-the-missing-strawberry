@@ -1,19 +1,19 @@
 extends Control
 
-onready var text = $RichTextLabel
-onready var char_name = $CharacterName
+@onready var text = $RichTextLabel
+@onready var char_name = $CharacterName
 
 
 func _ready():
-	DialogManager.connect("dialog_start", self, "_on_dialog_start")
-	DialogManager.connect("dialog_end", self, "_on_dialog_end")
-	DialogManager.connect("event_start", self, "_on_event_start")
+	DialogManager.connect("dialog_start", Callable(self, "_on_dialog_start"))
+	DialogManager.connect("dialog_end", Callable(self, "_on_dialog_end"))
+	DialogManager.connect("event_start", Callable(self, "_on_event_start"))
 
 
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		DialogManager.next_event()
-		get_tree().set_input_as_handled()
+		get_viewport().set_input_as_handled()
 
 
 func _on_dialog_start():

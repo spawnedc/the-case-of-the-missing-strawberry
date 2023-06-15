@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=2 format=2]
 
-[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/UI/UI-elements-64x64.png" type="Texture" id=1]
+[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/UI/UI-elements-64x64.png" type="Texture2D" id=1]
 
 [resource]
 0/name = "UI-elements"

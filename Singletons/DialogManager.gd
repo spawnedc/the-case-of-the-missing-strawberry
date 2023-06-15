@@ -26,12 +26,12 @@ func _ready():
 
 
 func start(dialog_name: String):
-	var timeline_path = timelines[dialog_name]["file"]
-	current_timeline = DialogicResources.get_timeline_json(timeline_path)
-	current_event_index = -1
-	current_event = null
-	dialog_ended = false
-	emit_signal("dialog_start")
+	#var timeline_path = timelines[dialog_name]["file"]
+	#current_timeline = DialogicResources.get_timeline_json(timeline_path)
+	#current_event_index = -1
+	#current_event = null
+	#dialog_ended = false
+	#emit_signal("dialog_start")
 
 
 func next_event():

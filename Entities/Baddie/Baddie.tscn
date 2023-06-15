@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Characters/enemy1-idle.png" type="Texture" id=1]
+[ext_resource path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Characters/enemy1-idle.png" type="Texture2D" id=1]
 [ext_resource path="res://Entities/Baddie/Baddie.gd" type="Script" id=2]
 
 [sub_resource type="AtlasTexture" id=28]
@@ -52,7 +52,7 @@ collision_layer = 2
 collision_mask = 2
 script = ExtResource( 2 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2( 17, -4 )
 scale = Vector2( 1.2, 1.2 )
 frames = SubResource( 36 )

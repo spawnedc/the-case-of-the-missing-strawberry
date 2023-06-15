@@ -1,12 +1,12 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://citeyw6by0mn3"]
 
-[ext_resource path="res://Scenes/Town/Town.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Root/Root.gd" type="Script" id=3]
+[ext_resource type="PackedScene" uid="uid://8jwug73f1245" path="res://Scenes/Town/Town.tscn" id="1"]
+[ext_resource type="Script" path="res://Scenes/Root/Root.gd" id="3"]
 
 [node name="Root" type="Node2D"]
-script = ExtResource( 3 )
+script = ExtResource("3")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
-[node name="Town" parent="." instance=ExtResource( 1 )]
-position = Vector2( 132, 42 )
+[node name="Town" parent="." instance=ExtResource("1")]
+position = Vector2(132, 42)
