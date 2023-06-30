@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://chsd4nl2mhqji"]
 
-[ext_resource type="Texture2D" uid="uid://bfcbb6ld13iyb" path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Props/Animated Tree1.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dsxf5t8hlqhji" path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Props/Animated Tree1.png" id="1"]
 [ext_resource type="Script" path="res://Props/Tree/Tree.gd" id="2"]
 
 [sub_resource type="AtlasTexture" id="1"]

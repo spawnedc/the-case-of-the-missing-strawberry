@@ -1,11 +1,7 @@
 res://default_env.tres
 res://Scenes/Root/Root.tscn
-res://Tilesets/Town.tres
 res://addons/dialogic/Editor/Events/styles/InputFieldsStyle.tres
+res://Tilesets/Town.tres
 res://Scenes/Town/Town.tscn
-res://Scenes/Town/Town.gd
-res://Singletons/DialogManager.gd
-res://Props/Shop/Shop.gd
-res://Entities/Player/Player.gd
 res://Entities/Player/Player.tscn
 res://Props/Tree/Tree.tscn

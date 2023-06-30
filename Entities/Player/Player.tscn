@@ -1,8 +1,8 @@
 [gd_scene load_steps=30 format=3 uid="uid://ce7wcciuhmiii"]
 
 [ext_resource type="Script" path="res://Entities/Player/Player.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://dlm5s4kecfgqi" path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Characters/warrior-idle.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://cobeskdsdrupo" path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Characters/warrior-run.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://sa6n2611nmgf" path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Characters/warrior-idle.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dmft55mdrrmby" path="res://Assets/EPIC RPG World Pack - Grass Land V. 1.4.1/Characters/warrior-run.png" id="4"]
 
 [sub_resource type="AtlasTexture" id="2"]
 atlas = ExtResource("3")

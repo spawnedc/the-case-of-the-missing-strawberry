@@ -4,7 +4,7 @@
 [ext_resource type="TileSet" uid="uid://d3qrd6revjaaf" path="res://Tilesets/Town.tres" id="2"]
 [ext_resource type="PackedScene" uid="uid://ce7wcciuhmiii" path="res://Entities/Player/Player.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://chsd4nl2mhqji" path="res://Props/Tree/Tree.tscn" id="4"]
-[ext_resource type="AudioStream" uid="uid://dinymt3gerwp1" path="res://Assets/Music/rpg_soundtrack/No Enemies Here.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://bfkmrcbddb3en" path="res://Assets/Music/rpg_soundtrack/No Enemies Here.wav" id="5"]
 [ext_resource type="Script" path="res://Scenes/Town/Town.gd" id="6"]
 [ext_resource type="PackedScene" path="res://Entities/Baddie/Baddie.tscn" id="7"]
 
